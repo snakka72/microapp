@@ -23,7 +23,7 @@ public class testController {
 		//String strText1 = "\"This is a String\"";
 		return ResponseEntity.ok(strText);*/
 		
-	    String json = "[\"Name: 'ID1001', City: 'Bura'\"]";
+	    String json = "[\"Name: 'ID1001', City: 'Hyderabad'\"]";
 	    HttpHeaders responseHeaders = new HttpHeaders();
 	    responseHeaders.setContentType(MediaType.APPLICATION_JSON);
 	    return new ResponseEntity<String>(json, responseHeaders, HttpStatus.ACCEPTED);		
