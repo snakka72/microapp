@@ -33,7 +33,7 @@ public class testController {
 	@RequestMapping(value = "test", method = RequestMethod.GET)
 	public ResponseEntity<String> unauthorized() {
 
-	    String json = "[\"Name: 'ID1001', City: 'Local2'\"]";
+	    String json = "[\"Name: 'ID1001', City: 'USA'\"]";
 	    HttpHeaders responseHeaders = new HttpHeaders();
 	    responseHeaders.setContentType(MediaType.APPLICATION_JSON);
 	    return new ResponseEntity<String>(json, responseHeaders, HttpStatus.ACCEPTED);
