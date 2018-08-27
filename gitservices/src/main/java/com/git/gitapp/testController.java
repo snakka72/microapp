@@ -23,7 +23,7 @@ public class testController {
 		//String strText1 = "\"This is a String\"";
 		return ResponseEntity.ok(strText);*/
 		
-	    String json = "[\"Name: 'ID1001', City: 'Hyderabad'\"]";
+	    String json = "[\"Name: 'ID1001', City: 'US'\"]";
 	    HttpHeaders responseHeaders = new HttpHeaders();
 	    responseHeaders.setContentType(MediaType.APPLICATION_JSON);
 	    return new ResponseEntity<String>(json, responseHeaders, HttpStatus.ACCEPTED);		
@@ -33,7 +33,7 @@ public class testController {
 	@RequestMapping(value = "test", method = RequestMethod.GET)
 	public ResponseEntity<String> unauthorized() {
 
-	    String json = "[\"Name: 'ID1001', City: 'Bura'\"]";
+	    String json = "[\"Name: 'ID1001', City: 'TX'\"]";
 	    HttpHeaders responseHeaders = new HttpHeaders();
 	    responseHeaders.setContentType(MediaType.APPLICATION_JSON);
 	    return new ResponseEntity<String>(json, responseHeaders, HttpStatus.ACCEPTED);
