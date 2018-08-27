@@ -1,0 +1,6 @@
+applications:
+- name: cloudapp-svc
+  host: cloudapp-svc
+  memory: 1G
+  instances: 1
+  path: ./target/gitapp-0.0.1-SNAPSHOT.war

@@ -1,0 +1,6 @@
+applications:
+- name: cloudapp-dev
+  host: cloudapp-dev
+  memory: 1G
+  instances: 1
+  path: ./target/gitservices-0.0.1-SNAPSHOT.war
