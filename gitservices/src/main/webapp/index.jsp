@@ -13,6 +13,8 @@ Welcome!
 
 <div ng-view></div>
 
+
+
 <script>
 
 var app = angular.module("myApp", ["ngRoute"]);
@@ -22,6 +24,9 @@ var app = angular.module("myApp", ["ngRoute"]);
         'https://www.w3schools.com/**'
      ]);
 }); */
+
+
+
 
 app.config(function($routeProvider) {
     $routeProvider
@@ -47,6 +52,8 @@ app.controller("employeeCtrl", function ($scope, $http) {
 });
 	
 	window.location.href = '#!employee';
+	
+
 	
 </script>
 

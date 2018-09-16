@@ -15,11 +15,20 @@ Welcome!
 
 <script>
 
+		
+
+</script>
+
+<script>
+
 var app = angular.module("myApp", ["ngRoute"]);
 
+var sourcesite = '${sourcesite}';
+console.log("####################sourcesite###################### " + sourcesite);
 
-
-
+var cloudsite = '${cloudsite}';
+console.log("####################sourcesite###################### " + cloudsite);
+ 
 /* app.config(function($sceDelegateProvider)  {
     $sceDelegateProvider.resourceUrlWhitelist([
         'https://cloudapp-svc.cfapps.io/**'
@@ -29,7 +38,7 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
     .when('/employee', {
-        templateUrl : 'employee.html' ,
+        templateUrl : ' employee.html' ,
         controller : 'employeeCtrl'
     
     });
@@ -43,13 +52,23 @@ app.controller("employeeCtrl", function ($scope, $http) {
     
     
     
-     $http.get("https://www.w3schools.com/angular/customers.php").then(function(response) {
+    /*  $http.get("https://www.w3schools.com/angular/customers.php").then(function(response) {
         $scope.Countries = response.data.records;
         console.log("$scope.Countries: " + JSON.stringify($scope.Countries));
-    }); 
-    
+    });  */
+     $http({
+		   method: 'GET',
+		   headers: {'Content-Type' : 'application/JSON'},
+		   url: '${sourcesite}' 
+	   })    
+	   .then(function(response) {
+	    $scope.Countries = response.data.records;
+	    console.log("$scope.Countries: " + JSON.stringify($scope.Countries));
+	   
+	});  
+
      
-      $http.get("https://cloudapp-svc.cfapps.io/welcome").then(function(response) {
+      $http.get('${cloudsite}'+'/welcome').then(function(response) {
          $scope.Country = response.data;
          //$scope.Country = response.data;
          console.log("$scope.Country: " + JSON.stringify($scope.Country));
