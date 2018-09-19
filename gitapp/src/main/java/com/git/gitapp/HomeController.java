@@ -22,6 +22,7 @@ public class HomeController {
 	public String index(ModelMap model) {
 		
 		System.out.println("SCHEDULERTEST inside HomeController");
+		System.out.println("Server");
 	
 		model.put("SCHEDULERTEST", schedularTest);
 		model.put("sourcesite", sourcesite);
