@@ -22,7 +22,8 @@ public class HomeController {
 	public String index(ModelMap model) {
 		
 		System.out.println("SCHEDULERTEST inside HomeController");
-	
+		System.out.println("first Client");
+		
 		model.put("SCHEDULERTEST", schedularTest);
 		model.put("sourcesite", sourcesite);
 		model.put("cloudsite", cloudsite);
@@ -30,6 +31,8 @@ public class HomeController {
 		System.out.println("root..." +schedularTest);
 		System.out.println("root..." +sourcesite);
 		System.out.println("root..." +cloudsite);
+		System.out.println("second Client");
+		
 		return "index";
 	}
 }
