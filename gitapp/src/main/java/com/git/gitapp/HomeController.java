@@ -24,6 +24,8 @@ public class HomeController {
 		System.out.println("SCHEDULERTEST inside HomeController");
 		System.out.println("first Client");
 		
+		System.out.println("Server");
+	
 		model.put("SCHEDULERTEST", schedularTest);
 		model.put("sourcesite", sourcesite);
 		model.put("cloudsite", cloudsite);
