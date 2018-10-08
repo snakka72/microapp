@@ -1,5 +1,7 @@
 package com.git.gitapp;
 
+import java.util.Map;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -17,5 +19,13 @@ public class GitappApplication extends  SpringBootServletInitializer{
 
 	public static void main(String[] args) {
 		SpringApplication.run(GitappApplication.class, args);
+		
+		 Map<String, String> env = System.getenv();
+	        for (String envName : env.keySet()) {
+	            System.out.format("%s=%s%n", envName, env.get(envName));
+	            System.out.println("************************************************************************ " );
+	            //String testSchedule = System.getenv("SCHEDULERTEST");
+	    		//System.out.println("testSchedule from manifest: " +testSchedule);
+	}
 	}
 }

@@ -28,6 +28,24 @@ console.log("####################sourcesite###################### " + sourcesite
 
 var cloudsite = '${cloudsite}';
 console.log("####################sourcesite###################### " + cloudsite);
+
+var schedularTest = '${SCHEDULERTEST}';
+console.log("####################schedularTest getenv ###################### " + schedularTest);
+
+var schedularTest1 = '${SCHEDULERTEST1}';
+console.log("####################schedularTest 1 Getproperty ###################### " + schedularTest1);
+
+var schedularTest2 = '${SCHEDULERTEST2}';
+console.log("####################schedularTest 2 Getproperty ###################### " + schedularTest2);
+
+
+console.log("DB SOURCE FROM PROPERTIES: ${dbsource}");
+console.log("JDBCURL FROM MANIFEST: ${JDBCURL}");
+console.log("USERNAME FROM MANIFEST: ${USERNAME}");
+console.log("PASSWORD FROM MANIFEST: ${PASSWORD}");
+console.log("DRIVER FROM MANIFEST:  ${DRIVER}");
+
+ 
  
 /* app.config(function($sceDelegateProvider)  {
     $sceDelegateProvider.resourceUrlWhitelist([

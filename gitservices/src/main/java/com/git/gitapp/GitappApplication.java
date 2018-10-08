@@ -20,7 +20,11 @@ public class GitappApplication extends  SpringBootServletInitializer  {
 		SpringApplication.run(GitappApplication.class, args);
 		
 		/*String testSchedule = System.getenv("SCHEDULERTEST");
+		String testSchedule1 = System.getProperty("SCHEDULERTEST");
 		System.out.println("testSchedule from manifest: " +testSchedule);
-		System.out.println("testSchedule from app.properties: " +testSchedule);*/
+		System.out.println("testSchedule from app.properties: " +testSchedule1);
+		
+		String javaHome = System.getenv("PATH");
+		System.out.println("testSchedule from JAVA_HOME: " +javaHome);*/
 	}
 }
