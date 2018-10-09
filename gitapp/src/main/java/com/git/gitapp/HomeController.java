@@ -29,7 +29,7 @@ public class HomeController {
 	public String index(ModelMap model) {
 		
 		//.getenv works for java SE
-		String schedularTest = System.getenv("SCHEDULERTEST"); 
+		String schedularTest = System.getenv("SCHEDULERTEST1"); 
 		
 		//.getProperty works for tomcat
 		String schedularTest1 = System.getProperty("SCHEDULERTEST1");
