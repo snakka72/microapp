@@ -49,7 +49,7 @@ public class HomeController {
 		System.out.println("second Client");
 		System.out.println("second Client");*/
 		
-		//model.put("SCHEDULERTEST", schedularTest);
+		model.put("SCHEDULERTEST", schedularTest);
 		
 		model.put("SCHEDULERTEST1", schedularTest1);
 		model.put("SCHEDULERTEST2", schedularTest2);
