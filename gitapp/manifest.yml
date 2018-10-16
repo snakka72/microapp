@@ -5,9 +5,5 @@ applications:
   instances: 1
   path: ./target/gitapp-0.0.1-SNAPSHOT.war
   env:
-    SCHEDULERTEST: TRUE
-    SCHEDULERTEST1: TRUE
-    JDBCURL: jdbc:oracle:thin:@//127.0.0.1:1521/xe
-    USERNAME: devdb
-    PASSWORD: XXXXXXXXXX
-    DRIVER: oracle.jdbc.OracleDriver
+    SCHEDULERTEST: FALSE
+
